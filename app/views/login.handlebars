@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+<form action="/login" method="post">
+    <p>
+        <label>Username:
+            <input type="text" name="username" value="test"/>
+        </label>
+    </p>
+
+    <p>
+        <label>Password:
+            <input type="password" name="password" value="test"/>
+        </label>
+    </p>
+
+    <p>
+        <button type="submit">login</button>
+    </p>
+    <p>
+        <a href="/auth/qq">QQ 登录</a>
+        <a href="/auth/wechat">微信登录</a>
+    </p>
+</form>
+</body>
+</html>

@@ -6,28 +6,28 @@ var config = {
   development: {
     root: rootPath,
     app: {
-      name: 'passport-yougedi-com'
+      name: 'passport'
     },
     port: 3000,
-    db: 'mongodb://localhost/passport-yougedi-com-development'
+    db: 'mongodb://127.0.0.1/passport-development'
   },
 
   test: {
     root: rootPath,
     app: {
-      name: 'passport-yougedi-com'
+      name: 'passport'
     },
     port: 3000,
-    db: 'mongodb://localhost/passport-yougedi-com-test'
+    db: 'mongodb://127.0.0.1/passport-test'
   },
 
   production: {
     root: rootPath,
     app: {
-      name: 'passport-yougedi-com'
+      name: 'passport'
     },
     port: 3000,
-    db: 'mongodb://localhost/passport-yougedi-com-production'
+    db: 'mongodb://127.0.0.1/passport-production'
   }
 };
 
