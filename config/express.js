@@ -10,6 +10,7 @@ var methodOverride = require('method-override');
 var exphbs  = require('express-handlebars');
 var cookieSession = require('cookie-session');
 var passport = require('passport');
+var flash = require('connect-flash');
 
 module.exports = function(app, config) {
   var env = process.env.NODE_ENV || 'development';
@@ -39,6 +40,7 @@ module.exports = function(app, config) {
   }));
   app.use(passport.initialize());
   app.use(passport.session());
+  app.use(flash());
 
   require('../lib/passport')();
 
