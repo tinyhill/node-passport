@@ -27,5 +27,5 @@ router.get('/auth/wechat/callback',
 );
 
 module.exports = function (app) {
-    app.use(router);
+    app.use('/', router);
 };
