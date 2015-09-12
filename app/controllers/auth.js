@@ -8,7 +8,7 @@ router.get('/auth/qq',
 
 router.get('/auth/qq/callback',
     passport.authenticate('qq', {
-        successRedirect: '/home',
+        successRedirect: '/',
         failureRedirect: '/login',
         failureFlash: true
     })
@@ -20,7 +20,19 @@ router.get('/auth/wechat',
 
 router.get('/auth/wechat/callback',
     passport.authenticate('wechat', {
-        successRedirect: '/home',
+        successRedirect: '/',
+        failureRedirect: '/login',
+        failureFlash: true
+    })
+);
+
+router.get('/auth/weibo',
+    passport.authenticate('weibo')
+);
+
+router.get('/auth/weibo/callback',
+    passport.authenticate('weibo', {
+        successRedirect: '/',
         failureRedirect: '/login',
         failureFlash: true
     })
