@@ -2,19 +2,23 @@
     {{#message}}{{.}}{{/message}}
     <p>
         <label>username:
-            <input type="text" name="username" value="test"/>
+            <input type="text" name="username" value="" placeholder="手机/邮箱/用户名">
         </label>
     </p>
 
     <p>
         <label>password:
-            <input type="password" name="password" value="test"/>
+            <input type="password" name="password" value="test">
         </label>
     </p>
 
     <p>
         <button type="submit">login</button>
     </p>
+    <p>
+        <a href="/forgotpassword">忘记密码？</a>
+    </p>
+
     <p>
         <a href="/auth/qq">QQ 登录</a>
         <a href="/auth/wechat">微信登录</a>

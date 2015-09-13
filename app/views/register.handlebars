@@ -1,18 +1,12 @@
 <form action="/register" method="post">
     {{#message}}{{.}}{{/message}}
     <p>
-        <label>username:
-            <input type="text" name="username" value="test"/>
+        <label>email:
+            <input type="text" name="email" value=""/>
         </label>
     </p>
 
     <p>
-        <label>password:
-            <input type="password" name="password" value="test"/>
-        </label>
-    </p>
-
-    <p>
-        <button type="submit">register</button>
+        <button type="submit">获取验证码</button>
     </p>
 </form>
