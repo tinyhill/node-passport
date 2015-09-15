@@ -12,7 +12,7 @@ var UserSchema = new Schema({
     registered: {type: Date, default: Date.now},
     qq_id: String,
     qq_figureurl: String,
-    wx_openid: String,
+    wechat_openid: String,
     wechat_headimgurl: String,
     wechat_unionid: String,
     weibo_id: String,
