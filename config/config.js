@@ -8,7 +8,7 @@ var config = {
     app: {
       name: 'passport'
     },
-    port: 3000,
+    port: 3001,
     db: 'mongodb://127.0.0.1/passport-development'
   },
 
@@ -17,7 +17,7 @@ var config = {
     app: {
       name: 'passport'
     },
-    port: 3000,
+    port: 3001,
     db: 'mongodb://127.0.0.1/passport-test'
   },
 
@@ -26,7 +26,7 @@ var config = {
     app: {
       name: 'passport'
     },
-    port: 3000,
+    port: 3001,
     db: 'mongodb://127.0.0.1/passport-production'
   }
 };
