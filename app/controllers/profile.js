@@ -1,7 +1,7 @@
 var express = require('express');
 var request = require('request');
-var User = require('../models/user');
 var router = express.Router();
+var User = require('../models/user');
 
 router.get('/profile/qq', function (req, res) {
     request.get({
