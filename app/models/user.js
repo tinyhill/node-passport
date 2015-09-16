@@ -5,22 +5,21 @@ var findOrCreate = require('mongoose-findorcreate');
 var UserSchema = new Schema({
     username: String,
     password: String,
+    display_name: String,
+    avatar: String,
     email: String,
     mobile: String,
+    registered: {type: Date, default: Date.now},
+    level: Number,
+    activation_key: String,
+    status: Number,
     gender: String,
     province: String,
     city: String,
-    registered: {type: Date, default: Date.now},
     qq_openid: String,
-    qq_nickname: String,
-    qq_figureurl: String,
     wechat_openid: String,
-    wechat_nickname: String,
-    wechat_headimgurl: String,
     wechat_unionid: String,
-    weibo_id: String,
-    weibo_screen_name: String,
-    weibo_profile_image_url: String
+    weibo_id: String
 });
 
 UserSchema.plugin(findOrCreate);
