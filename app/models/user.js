@@ -12,11 +12,14 @@ var UserSchema = new Schema({
     city: String,
     registered: {type: Date, default: Date.now},
     qq_openid: String,
+    qq_nickname: String,
     qq_figureurl: String,
     wechat_openid: String,
+    wechat_nickname: String,
     wechat_headimgurl: String,
     wechat_unionid: String,
     weibo_id: String,
+    weibo_screen_name: String,
     weibo_profile_image_url: String
 });
 
