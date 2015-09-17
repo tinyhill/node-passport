@@ -1,14 +1,8 @@
 ## passport
 
-### 数据库
+### 部署数据库
 
-首先 mongodb 配置中开启验证：
-
-```
-auth=true
-```
-
-切换数据库：
+切换到数据库：
 
 ```
 use passport-development
@@ -26,7 +20,7 @@ db.createUser(
 )
 ```
 
-### User 字段说明
+### 用户字段说明
 
 * username - 用户名称
 * password - 用户密码
@@ -46,7 +40,7 @@ db.createUser(
 * wechat_unionid
 * weibo_openid
 
-### 客户端读取 User 信息
+### 客户端读取用户信息
 
 ```
 http://passport.yougedi.com/profile/qq?access_token=***
