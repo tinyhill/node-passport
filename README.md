@@ -1,5 +1,31 @@
 ## passport
 
+### 数据库
+
+首先 mongodb 配置中开启验证：
+
+```
+auth=true
+```
+
+切换数据库：
+
+```
+use passport-development
+```
+
+创建数据库用户：
+
+```
+db.createUser(
+   {
+     user: "root",
+     pwd: "HyNmt8JFAf8fXCTg",
+     roles: [ "readWrite", "dbAdmin" ]
+   }
+)
+```
+
 ### User 字段说明
 
 * username - 用户名称
@@ -20,10 +46,10 @@
 * wechat_unionid
 * weibo_openid
 
-### 客户端通过 access_token 拉取用户信息
+### 客户端读取 User 信息
 
 ```
-http://passport.yougedi.com/profile/qq?access_token=2.00ssXvmB6WPahCf0351faa4eEhqnAB
-http://passport.yougedi.com/profile/wechat?access_token=2.00ssXvmB6WPahCf0351faa4eEhqnAB&openid=xxx
-http://passport.yougedi.com/profile/weibo?access_token=2.00ssXvmB6WPahCf0351faa4eEhqnAB
+http://passport.yougedi.com/profile/qq?access_token=***
+http://passport.yougedi.com/profile/wechat?access_token=***&openid=***
+http://passport.yougedi.com/profile/weibo?access_token=***
 ```

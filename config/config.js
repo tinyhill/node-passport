@@ -9,7 +9,7 @@ var config = {
       name: 'passport'
     },
     port: 3001,
-    db: 'mongodb://127.0.0.1/passport-development'
+    db: 'mongodb://root:HyNmt8JFAf8fXCTg@localhost:27017/passport-development'
   },
 
   test: {
@@ -18,7 +18,7 @@ var config = {
       name: 'passport'
     },
     port: 3001,
-    db: 'mongodb://127.0.0.1/passport-test'
+    db: 'mongodb://root:HyNmt8JFAf8fXCTg@localhost:27017/passport-test'
   },
 
   production: {
@@ -27,7 +27,7 @@ var config = {
       name: 'passport'
     },
     port: 3001,
-    db: 'mongodb://127.0.0.1/passport-production'
+    db: 'mongodb://root:HyNmt8JFAf8fXCTg@localhost:27017/passport-production'
   }
 };
 
