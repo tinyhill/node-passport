@@ -5,6 +5,11 @@
 切换到数据库：
 
 ```
+// 本机
+use passport-development
+// 测试
+use passport-test
+// 线上
 use passport-development
 ```
 

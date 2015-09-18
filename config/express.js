@@ -36,6 +36,7 @@ module.exports = function(app, config) {
   app.use(express.static(config.root + '/public'));
   app.use(methodOverride());
   app.use(cookieSession({
+    domain: '.yougedi.com',
     keys: ['F8VnR8VcNaMDFeeT']
   }));
   app.use(passport.initialize());
