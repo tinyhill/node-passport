@@ -1,29 +1,6 @@
 ## passport
 
-### 部署数据库
-
-切换到数据库：
-
-```
-// 本机
-use passport-development
-// 测试
-use passport-test
-// 线上
-use passport-development
-```
-
-创建数据库用户：
-
-```
-db.createUser(
-   {
-     user: "root",
-     pwd: "HyNmt8JFAf8fXCTg",
-     roles: [ "readWrite", "dbAdmin" ]
-   }
-)
-```
+用户通行证系统
 
 ### 用户字段说明
 

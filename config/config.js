@@ -9,7 +9,7 @@ var config = {
       name: 'passport'
     },
     port: 3001,
-    db: 'mongodb://root:HyNmt8JFAf8fXCTg@localhost:27017/passport-development'
+    db: 'mongodb://root:HyNmt8JFAf8fXCTg@localhost:27017/yougedi-development'
   },
 
   test: {
@@ -18,7 +18,7 @@ var config = {
       name: 'passport'
     },
     port: 3001,
-    db: 'mongodb://root:HyNmt8JFAf8fXCTg@localhost:27017/passport-test'
+    db: 'mongodb://root:HyNmt8JFAf8fXCTg@localhost:27017/yougedi-test'
   },
 
   production: {
@@ -27,7 +27,7 @@ var config = {
       name: 'passport'
     },
     port: 3001,
-    db: 'mongodb://root:HyNmt8JFAf8fXCTg@localhost:27017/passport-production'
+    db: 'mongodb://root:HyNmt8JFAf8fXCTg@localhost:27017/yougedi-production'
   }
 };
 
