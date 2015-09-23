@@ -20,6 +20,8 @@ var UserSchema = new Schema({
     wechat_openid: String,
     wechat_unionid: String,
     weibo_id: String
+}, {
+    collection: 'user'
 });
 
 UserSchema.plugin(findOrCreate);
