@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var findOrCreate = require('mongoose-findorcreate');
+var timestamp = require('mongoose-timestamp');
 
 var UserSchema = new Schema({
     username: String,
@@ -9,7 +10,6 @@ var UserSchema = new Schema({
     avatar: String,
     email: String,
     mobile: String,
-    registered: {type: Date, default: Date.now},
     level: Number,
     activation_key: String,
     status: Number,
@@ -24,6 +24,11 @@ var UserSchema = new Schema({
     collection: 'user'
 });
 
-UserSchema.plugin(findOrCreate);
+UserSchema
+    .plugin(findOrCreate)
+    .plugin(timestamp, {
+        createdAt: 'create_at',
+        updatedAt: 'update_at'
+    });
 
 module.exports = mongoose.model('User', UserSchema);
