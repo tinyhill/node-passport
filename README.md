@@ -25,7 +25,7 @@
 ### 客户端读取用户信息
 
 ```
-http://passport.yougedi.com/profile/qq?access_token=***
-http://passport.yougedi.com/profile/wechat?access_token=***&openid=***
-http://passport.yougedi.com/profile/weibo?access_token=***
+http://passport.example.com/profile/qq?access_token=***
+http://passport.example.com/profile/wechat?access_token=***&openid=***
+http://passport.example.com/profile/weibo?access_token=***
 ```
